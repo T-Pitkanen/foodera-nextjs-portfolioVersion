@@ -3,6 +3,7 @@ import styles from './basket.module.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import productsData from '../../data/products.json';
 
 const Basket = () => {
 	//useBasket hook to get the current state of basket

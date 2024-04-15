@@ -1,0 +1,37 @@
+[
+	{
+		"_id": "660d974589bc06cf3ae9a7cf",
+		"title": "Cubico partner in Food",
+		"imagePath": "/affiliates/affiliate_01.png",
+		"created": "2024-04-03T17:52:05.621Z",
+		"__v": 0
+	},
+	{
+		"_id": "660d974589bc06cf3ae9a7d1",
+		"title": "King partner in Food",
+		"imagePath": "/affiliates/affiliate_02.png",
+		"created": "2024-04-03T17:52:05.621Z",
+		"__v": 0
+	},
+	{
+		"_id": "660d974589bc06cf3ae9a7d3",
+		"title": "Hexagon partner in Food",
+		"imagePath": "/affiliates/affiliate_03.png",
+		"created": "2024-04-03T17:52:05.621Z",
+		"__v": 0
+	},
+	{
+		"_id": "660d974589bc06cf3ae9a7d5",
+		"title": "Coffee partner in Food",
+		"imagePath": "/affiliates/affiliate_04.png",
+		"created": "2024-04-03T17:52:05.621Z",
+		"__v": 0
+	},
+	{
+		"_id": "660d974589bc06cf3ae9a7d7",
+		"title": "Mates partner in Food",
+		"imagePath": "/affiliates/affiliate_05.png",
+		"created": "2024-04-03T17:52:05.621Z",
+		"__v": 0
+	}
+]
