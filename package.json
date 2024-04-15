@@ -1,0 +1,31 @@
+{
+  "name": "foodora-nextjs-exam",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "node -r dotenv/config ./src/lib/db/seed/seeddb.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.540.0",
+    "@uidotdev/usehooks": "^2.4.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "mongoose": "^8.2.2",
+    "next": "14.1.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "swiper": "^11.0.7",
+    "yup": "^1.4.0"
+  },
+  "description": "``` Author      : Media College Viborg. Date        : 2024 Description : Project Bootstrapping. ```",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
