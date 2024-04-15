@@ -4,10 +4,20 @@ import Accordion from './accordion';
 import { useEffect, useState } from 'react';
 // import { API_BASE_URL } from '@/config/apiConfig';
 import styles from './accordions.module.css';
+import questionsData from '../../data/questions.json';
 
 const Faqs = () => {
-	const [questionsData, setQuestionsData] = useState([]);
+	const [questions, setQuestionsData] = useState([]);
 
+	useEffect(() => {
+		const getQuestions = async () => {
+			setQuestionsData(questionsData);
+		};
+
+		getQuestions();
+	}, []);
+
+	/* ORIGINAL
 	useEffect(() => {
 		const getQuestions = async () => {
 			const response = await fetch('api/faqs');
@@ -16,7 +26,7 @@ const Faqs = () => {
 		};
 
 		getQuestions();
-	}, []);
+	}, []); */
 
 	return (
 		<div className={styles.accordionsContainer} id='faq'>

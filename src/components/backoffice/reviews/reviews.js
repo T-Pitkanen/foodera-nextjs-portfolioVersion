@@ -2,10 +2,20 @@
 import { useEffect, useState } from 'react';
 import styles from './reviews.module.css';
 import Image from 'next/image';
+import reviewsData from '../../../data/reviews.json';
 
 const Reviews = () => {
 	const [reviews, setReviews] = useState([]);
 
+	useEffect(() => {
+		const getReviews = async () => {
+			setReviews(reviewsData);
+		};
+
+		getReviews();
+	}, []);
+
+	/* ORIGINAL
 	const getReviews = async () => {
 		const response = await fetch('http://localhost:3000/api/reviews');
 		const data = await response.json();
@@ -49,7 +59,7 @@ const Reviews = () => {
 		let data = await response.json();
 
 		getReviews();
-	};
+	}; */
 
 	return (
 		<div className={styles.container}>
@@ -67,7 +77,10 @@ const Reviews = () => {
 							/>
 							<p>{review.name}</p>
 							<p>{review.text}</p>
-							<button onClick={(e) => handleDelete(e, review._id)}>
+							{/* <button onClick={(e) => handleDelete(e, review._id)}>
+								Delete
+							</button> */}
+							<button>
 								Delete
 							</button>
 						</span>
@@ -77,7 +90,8 @@ const Reviews = () => {
 
 			<h3>Add New Review</h3>
 
-			<form onSubmit={handleSubmit}>
+			{/* <form onSubmit={handleSubmit}> */}
+			<form>
 				<label>
 					{' '}
 					Name

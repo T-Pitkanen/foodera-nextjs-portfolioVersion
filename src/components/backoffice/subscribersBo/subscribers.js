@@ -1,10 +1,24 @@
-'use client';
-import { useEffect, useState } from 'react';
-import styles from './subscribers.module.css';
+"use client";
+import { useEffect, useState } from "react";
+import styles from "./subscribers.module.css";
+// import subscriberData from "../../../data/subscribers.json";
 
 const Subscribers = () => {
-	const [subscribers, setSubscribers] = useState([]);
+  const [subscribers, setSubscribers] = useState([]);
 
+
+
+
+  useEffect(() => {
+	const getSubscribers = async () => {
+		setSubscribers(subscriberData);
+	  
+	};
+
+	getSubscribers();
+  }, []);
+
+  /*
 	const getSubscribers = async () => {
 		const response = await fetch('http://localhost:3000/api/subscribers');
 		const data = await response.json();
@@ -65,77 +79,79 @@ const Subscribers = () => {
 		let data = await response.json();
 
 		getSubscribers();
-	};
+	}; */
 
-	return (
-		<div className={styles.container}>
-			<h2>Subscribers</h2>
-			<table className={styles.subscribersTable}>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Email</th>
-						<th>Message</th>
-						<th>Action</th>
-					</tr>
-				</thead>
-				<tbody>
-					{subscribers.map((subscriber, index) => {
-						return (
-							<tr key={index}>
-								<td>{subscriber.name}</td>
-								<td>{subscriber.email}</td>
-								<td>{subscriber.message}</td>
+  return (
+    <div className={styles.container}>
+      <h2>Subscribers</h2>
+      <table className={styles.subscribersTable}>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {subscribers.map((subscriber, index) => {
+            return (
+              <tr key={index}>
+                <td>{subscriber.name}</td>
+                <td>{subscriber.email}</td>
+                <td>{subscriber.message}</td>
 
-								<td>
-									<button onClick={(e) => handleDelete(e, subscriber._id)}>
+                <td>
+                  {/* <button onClick={(e) => handleDelete(e, subscriber._id)}>
 										Delete
-									</button>
-								</td>
-							</tr>
-						);
-					})}
-				</tbody>
-			</table>
+									</button> */}
+                  <button>Delete</button>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
-			<h3>Add New Subscriber</h3>
+      <h3>Add New Subscriber</h3>
 
-			<form className={styles.subForm} onSubmit={handleSubmit}>
-				<label>
-					{' '}
-					Name
-					<input
-						type="name"
-						name="name"
-						placeholder="Enter Name"
-						defaultValue={''}
-					/>
-				</label>
-				<label>
-					{' '}
-					Email
-					<input
-						type="email"
-						name="email"
-						placeholder="Enter Email"
-						defaultValue={''}
-					/>
-				</label>
-				<label>
-					{' '}
-					Text
-					<textarea
-						type="message"
-						name="message"
-						placeholder="Enter Message"
-						defaultValue={''}
-					/>
-				</label>
+      {/* <form className={styles.subForm} onSubmit={handleSubmit}> */}
+      <form className={styles.subForm}>
+        <label>
+          {" "}
+          Name
+          <input
+            type="name"
+            name="name"
+            placeholder="Enter Name"
+            defaultValue={""}
+          />
+        </label>
+        <label>
+          {" "}
+          Email
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            defaultValue={""}
+          />
+        </label>
+        <label>
+          {" "}
+          Text
+          <textarea
+            type="message"
+            name="message"
+            placeholder="Enter Message"
+            defaultValue={""}
+          />
+        </label>
 
-				<button>Add New Subscriber</button>
-			</form>
-		</div>
-	);
+        <button>Add New Subscriber</button>
+      </form>
+    </div>
+  );
 };
 
 export default Subscribers;
