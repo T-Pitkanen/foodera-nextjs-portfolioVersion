@@ -24,7 +24,7 @@ const About = () => {
 						purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat
 						tellus.
 					</p>
-					<Link className={styles.button} href="/about">
+					<Link className={styles.button} href="#about">
 						Learn More
 					</Link>
 				</div>
@@ -38,7 +38,7 @@ const About = () => {
 					width={500}
 					height={500}
 				/>
-				<div>
+				<div className={styles.aboutTextSecond}>
 					<h2>
 						We make everything by hand with the best possible ingredients.
 					</h2>
@@ -61,7 +61,7 @@ const About = () => {
 							volutpat.
 						</p>
 					</div>
-					<Link className={styles.button} href="/about">
+					<Link className={styles.button} href="#about">
 						Learn More
 					</Link>
 				</div>

@@ -1,95 +1,102 @@
 .container {
-    width: auto;
-    height: auto;
-    background-image: url('/backgrounds/features/feature_01.jpg');
-    background-position: 45% 100%;
-    background-size: cover;
-    padding: 5vh 0;
+  width: auto;
+  height: auto;
+  background-image: url("/backgrounds/features/feature_01.jpg");
+  background-position: 45% 100%;
+  background-size: cover;
+  padding: 5vh 0;
 }
 
 .container,
 .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
+  text-align: center;
 }
 
 .body {
-    gap: 1em;
-    width: 80%;
-    background-color: #ffffffe8;
-    padding: 2em 1em;
-    border-radius: 20px;
+  gap: 1em;
+  width: 80%;
+  background-color: #ffffffe8;
+  padding: 2em 1em;
+  border-radius: 20px;
 }
 
 .body h4 {
-
-    font-size: 2.5em;
-    color: var(--darkred-color);
+  font-size: 2.5em;
+  color: var(--darkred-color);
 }
 
 .body p {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--darkgrey-color);
 
-    font-size: 1.1em;
-    font-weight: 500;
-    color: var(--darkgrey-color);
-
-    letter-spacing: 1px;
-
+  letter-spacing: 1px;
 }
 
 .body button {
+  display: inline-block;
 
-    display: inline-block;
+  width: auto;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  border: none;
+  background-color: var(--red-color);
 
-    width: auto;
-    margin: 4px 2px;
-    padding: 15px 32px;
-    border: none;
-    background-color: var(--red-color);
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 
-    font-size: 1em;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .icon {
-    font-size: 1.2em;
-    margin-right: 4vw;
+  font-size: 1.2em;
+  margin-right: 4vw;
 }
 
-
 @media screen and (min-width: 1024px) {
+  .body {
+    gap: 1em;
+    width: 70%;
+    background-color: #ffffffe8;
+    padding: 2em 1em;
+    border-radius: 20px;
+  }
 
+  .body h4 {
+    width: 80%;
+  }
 
-    .body {
-        gap: 1em;
-        width: 70%;
-        background-color: #ffffffe8;
-        padding: 2em 1em;
-        border-radius: 20px;
-    }
+  .body p {
+    width: 60%;
+  }
 
-    .body h4 {
+  .icon {
+    margin-right: 2vw;
+  }
+}
 
-       width: 80%;
-    }
-    
-    .body p {
-    
-        width: 60%;
-    
-    }
+@media screen and (min-width: 1910px) {
+  .body {
+    gap: 3em;
+  }
 
-    .icon {
-        margin-right: 2vw;
-    }
+  .body h4 {
+    width: 70%;
+  }
+
+  .body p {
+    width: 50%;
+  }
+
+  .body button {
+    font-size: 1.25em;
+  }
 }

@@ -2,7 +2,6 @@
 
 import Accordion from './accordion';
 import { useEffect, useState } from 'react';
-// import { API_BASE_URL } from '@/config/apiConfig';
 import styles from './accordions.module.css';
 import questionsData from '../../data/questions.json';
 
@@ -33,10 +32,10 @@ const Faqs = () => {
 			<h3>Frequently Asked Questions</h3>
 			<div className={styles.accordions}>
 				{' '}
-				{questionsData.map((question) => {
+				{questionsData.map((question, index) => {
 					return (
 						<Accordion
-							key={question._id}
+							key={index}
 							header={question.question}
 							body={question.answer}
 						></Accordion>

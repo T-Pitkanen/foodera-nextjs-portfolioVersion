@@ -1,6 +1,6 @@
 .page {
   margin-top: 20vh;
-  margin-bottom: 40vh;
+  margin-bottom: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,4 +35,30 @@
   cursor: pointer;
   letter-spacing: 1px;
   margin-top: 5vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .page {
+    margin-top: 0vh;
+    padding-top: 20vh;
+  }
+
+  .container {
+    font-size: 1.5em;
+  }
+
+  .container h1{
+    font-size: 35px;
+  }
+
+  .container p{
+    font-size: 16px;
+  }
+
+  .container button {
+
+  
+    font-size: 16px;
+
+  }
 }

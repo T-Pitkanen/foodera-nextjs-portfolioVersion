@@ -12,10 +12,10 @@ const Hero = () => {
 					tellus.
 				</p>
 				<div className={styles.buttons}>
-					<Link className={styles.button} href="/explore">
+					<Link className={styles.button} href="#selected">
 						Order Now
 					</Link>
-					<Link className={styles.buttonLearn} href="/about">
+					<Link className={styles.buttonLearn} href="#about">
 						Learn More
 					</Link>
 				</div>

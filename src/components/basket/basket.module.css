@@ -117,3 +117,20 @@
 
   
 }
+
+@media (min-width: 1910px) {
+
+
+
+  .item span{
+    font-size: 1.25em;
+  }
+
+  .removeBtn {
+  
+    font-size: 13px;
+    
+  }
+
+
+}

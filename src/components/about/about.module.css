@@ -58,25 +58,21 @@
   gap: 0.5em;
 }
 
-
-@media only screen and (min-width: 1024px) {
-
-
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .container {
+    margin: 5vh 0;
     flex-direction: row;
-    gap: 2em;
+    gap: 3em;
     padding: 10vh 15vw;
-
-  
-
   }
 
-  
-
+  .container p {
+    font-size: 1em;
+  }
 
   .image {
     object-fit: cover;
-    width: 100%;
+    width: auto;
     height: 100%;
     border-radius: 50px;
   }
@@ -86,15 +82,46 @@
     height: auto;
   }
 
-
-
   .containerSecond {
     flex-direction: row-reverse;
   }
 
   .button {
+    width: 100%;
+  }
+}
 
-    width: 40%;
+@media screen and (min-width: 1910px) {
+  .container {
+    flex-direction: row;
+    gap: 2em;
+    padding: 10vh 15vw;
+  }
 
+  .image {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    border-radius: 50px;
+  }
+
+  .imageSecond {
+    width: 100%;
+    height: auto;
+  }
+
+  .containerSecond {
+    flex-direction: row-reverse;
+  }
+
+  .aboutText {
+    width: 50%;
+    line-height: 1.5;
+  }
+
+  .aboutTextSecond {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 }

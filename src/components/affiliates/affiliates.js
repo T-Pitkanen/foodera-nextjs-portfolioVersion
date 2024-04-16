@@ -1,16 +1,3 @@
-// import Link from "next/link";
-// import styles from "./affiliates.module.css";
-
-// const Affiliates = () => {
-//   return (
-//     <div className={styles.container}>
-//       <h2>Our Partners</h2>
-//      <div className={styles.affiliates}> </div>
-//     </div>
-//   );
-// };
-
-// export default Affiliates;
 
 'use client';
 import Image from 'next/image';
@@ -34,7 +21,9 @@ const Affiliates = () => {
 	useEffect(() => {
 		const getAffiliates = async () => {
 			setAffiliates(affiliatesData);
-			swiperRef.current.swiper.update();
+			if (swiperRef.current && swiperRef.current.swiper) {
+				swiperRef.current.swiper.update();
+			}
 		};
 
 		getAffiliates();

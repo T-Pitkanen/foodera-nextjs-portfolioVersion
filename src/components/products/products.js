@@ -7,7 +7,7 @@ import productData from '../../data/products.json';
 
 const Products = ({ recommend }) => {
 	const [products, setProducts] = useState([]);
-	const [recommended, setRecommeded] = useState(recommend);
+	const [recommended, setRecommended] = useState(recommend);
 
 	const showAllProducts = () => {
 		return products.length !== 0

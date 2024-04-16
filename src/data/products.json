@@ -1,56 +1,62 @@
 [
-	{
-		"title": "Rainbow Vegetable Sandwich",
-		"time": "15 Minutes",
-		"serves": 1,
-		"image": "/products/product_01.jpg",
-		"price": 10.5,
-		"priceBefore": 11.5,
-		"explore": true
-	},
-	{
-		"title": "Cheesecake Stuffed Strawberries",
-		"time": "20 Minutes",
-		"serves": 1,
-		"image": "/products/product_02.jpg",
-		"price": 27.0,
-		"priceBefore": 33.5,
-		"explore": true
-	},
-	{
-		"title": "Sandwich with Cucumber, Dill, and Cream Cheese",
-		"time": "15 - 20 Minutes",
-		"serves": 1,
-		"image": "/products/product_03.jpg",
-		"price": 13.5,
-		"priceBefore": 17.5,
-		"explore": true
-	},
-	{
-		"title": "BLT Sandwich with Avocado and Sprouts",
-		"time": "25 Minutes",
-		"serves": 1,
-		"image": "/products/product_04.jpg",
-		"price": 10.5,
-		"priceBefore": 0,
-		"explore": false
-	},
-	{
-		"title": "Rye Sandwich with Carrot and Fennel Salad",
-		"time": "20 Minutes",
-		"serves": 1,
-		"image": "/products/product_05.jpg",
-		"price": 27.0,
-		"priceBefore": 33.5,
-		"explore": false
-	},
-	{
-		"title": "Rye bread with sliced meat and salad",
-		"time": "15 - 20 Minutes",
-		"serves": 1,
-		"image": "/products/product_06.jpg",
-		"price": 21.25,
-		"priceBefore": 31.5,
-		"explore": false
-	}
+  {
+    "_id": "660ab00981872e42d9a95e53",
+    "title": "Rainbow Vegetable Sandwich",
+    "time": "15 Minutes",
+    "serves": 1,
+    "image": "/products/product_01.jpg",
+    "price": 10.5,
+    "priceBefore": 11.5,
+    "explore": true
+  },
+  {
+    "_id": "660ab00981872e42d9a95e55",
+    "title": "Cheesecake Stuffed Strawberries",
+    "time": "20 Minutes",
+    "serves": 1,
+    "image": "/products/product_02.jpg",
+    "price": 27.0,
+    "priceBefore": 33.5,
+    "explore": true
+  },
+  {
+    "_id": "660ab00981872e42d9a95e57",
+    "title": "Sandwich with Cucumber, Dill, and Cream Cheese",
+    "time": "15 - 20 Minutes",
+    "serves": 1,
+    "image": "/products/product_03.jpg",
+    "price": 13.5,
+    "priceBefore": 17.5,
+    "explore": true
+  },
+  {
+    "_id": "660ab00981872e42d9a95e59",
+    "title": "BLT Sandwich with Avocado and Sprouts",
+    "time": "25 Minutes",
+    "serves": 1,
+    "image": "/products/product_04.jpg",
+    "price": 10.5,
+    "priceBefore": 0,
+    "explore": false
+  },
+  {
+    "_id": "660ab00981872e42d9a95e5b",
+    "title": "Rye Sandwich with Carrot and Fennel Salad",
+    "time": "20 Minutes",
+    "serves": 1,
+    "image": "/products/product_05.jpg",
+    "price": 27.0,
+    "priceBefore": 33.5,
+    "explore": false
+  },
+  {
+    "_id": "660ab00981872e42d9a95e5d",
+    "title": "Rye bread with sliced meat and salad",
+    "time": "15 - 20 Minutes",
+    "serves": 1,
+    "image": "/products/product_06.jpg",
+    "price": 21.25,
+    "priceBefore": 31.5,
+    "explore": false
+  }
 ]

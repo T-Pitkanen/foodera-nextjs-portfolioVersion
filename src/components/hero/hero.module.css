@@ -82,23 +82,23 @@
 
     .hero h1 {
 
-        font-size: 50px;
+        font-size: 40px;
 
     }
 
     .hero p {
-        font-size: 20px;
+        font-size: 1em;
 
     }
 
     .button,
     .buttonLearn {
-        width: 40%;
+        width: 100%;
     }
 
     .buttons {
         flex-direction: row;
-        font-size: 20px;
+        font-size: 1em;
     }
 
 
