@@ -41,6 +41,21 @@
     font-weight: 600;
 }
 
+.button:hover {
+    background-color: white;
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+    transition: 0.2s;
+}
+
+.buttonLearn:hover {
+    background-color: white;
+    border: 1px solid var(--red-color);
+    color: white;
+    transition: 0.2s;
+    background-color: var(--red-color);
+}
+
 .buttonLearn {
     background-color: white;
     border: 1px solid var(--red-color);
@@ -105,3 +120,25 @@
 
 
 }
+
+@media screen and (min-width: 1910px) {
+
+
+    .hero h1 {
+
+        font-size: 50px;
+
+    }
+
+    .hero p {
+        font-size: 1.25em;
+
+    }
+
+    .buttons{
+        width: 80%;
+    }
+
+}
+
+

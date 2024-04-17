@@ -18,12 +18,12 @@
 }
 
 .explore h2 {
-    font-size: 2.5em;
+    font-size: 2.25em;
     color: var(--darkred-color);
 }
 
 .explore p {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
     color: var(--grey-color);
     letter-spacing: 1px;
@@ -51,5 +51,18 @@
 
     .explore {
         width: 70%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    .explore h2 {
+        font-size: 2.5em;
+      
+    }
+    
+    .explore p {
+        font-size: 1.25em;
+  
     }
 }
