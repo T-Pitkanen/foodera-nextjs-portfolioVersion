@@ -58,7 +58,7 @@ const NavigationMobile = () => {
           {" "}
           <Link href="#home">Home</Link>
           <Link href="#about">About Us</Link>
-          <Link href="#selected">Explore Foods</Link>
+          <Link href="#selected">Explore</Link>
           <Link href="#reviews">Reviews</Link>
           <Link href="#faq">Faq</Link>
         </div>
