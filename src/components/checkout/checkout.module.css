@@ -2,6 +2,10 @@
   width: 90%;
   margin: 10vh auto;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container h1 {
@@ -69,7 +73,7 @@
   padding: 0.5em 1em;
   border: none;
   border-radius: 5px;
-  background-color: var(--color-green);
+  background-color: var(--red-color);
 
   font-size: 19px;
   font-weight: bolder;
@@ -124,7 +128,7 @@
   border: none;
   font-size: 1em;
   border-radius: 5px;
-  background-color: var(--color-green);
+  background-color: var(--red-color);
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -167,5 +171,53 @@
 
   .container img {
     width: 10%;
+  }
+}
+
+@media screen and (min-width: 1910px) {
+  .container {
+    gap: 1em;
+  }
+
+  .checkoutHeader {
+
+    margin-bottom: 5vh;
+  }
+  .container img {
+    width: 10%;
+  }
+
+  .checkoutTotal,
+  .buttonContainer {
+    width: 50%;
+  }
+
+  .checkoutTotal {
+    font-size: 1.5em;
+  }
+
+  .checkoutSection label {
+    font-size: 1.25em;
+    width: 50%;
+  }
+
+  .checkoutSection input {
+    padding: 1em 1em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .buttonContainer button {
+    padding: 1em;
+    font-size: 1.25em;
+  }
+
+  .products {
+    width: 50%;
+  }
+
+  .checkoutSection label{
+    margin-top: 5vh;
   }
 }

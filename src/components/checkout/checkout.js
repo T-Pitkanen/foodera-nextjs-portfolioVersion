@@ -131,9 +131,10 @@ const Checkout = () => {
               .toFixed(2)}
           </p>
         </div>
-        <label>
-          Enter Email
+        <label className={styles.checkoutEmail}>
+        Enter email to continue with the checkout 
           <input
+          
             type="email"
             placeholder="Email"
             value={email}
